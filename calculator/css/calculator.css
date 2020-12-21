@@ -1,0 +1,83 @@
+body {
+  font-size: 64px;
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  grid-template-areas:  "header header header header"  "main main main main" "main main main main" "main main main main" "main main main main" "main main main main";
+}
+
+
+.calculatorDisplay {
+  grid-area: header;
+  color: white;
+  text-align: right;
+  padding-right: 21px;
+}
+
+#globalAnswer {
+  background-color: green;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  font-size: 36px;
+}
+
+#currentValue {
+  background-color: blue;
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  text-align: right;
+}
+
+.btn {
+  background-color: dimgray;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+.orange {
+  background-color: orange;
+}
+
+button.orange:focus {
+  background-color: white;
+  color: gold
+}
+
+.silver {
+  background-color: silver;
+  color: black;
+}
+
+button.silver:focus {
+  background-color: white;
+  color: black
+}
+
+.equals {
+  background-color: orange;
+}
+
+button.equals:focus {
+  background-color: white;
+  color: gold
+}
+
+.zero {
+  grid-row: 6;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  border-radius: 40px / 35px;
+}
+
+button {
+  font-size: 26px;
+}
