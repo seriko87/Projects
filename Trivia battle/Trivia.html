@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Trivia Battle</title>
+	<link rel="stylesheet" href="css/Trivia.css">
+</head>
+<body>
+	<div class="container">
+		
+		<h1>Trivia Battle</h1>
+		<div class="top-section">
+			<div class="scores">
+			<label>Score: </label><br>
+				<span id="score">Correct: 0 - Wrong: 0</span>
+			</div>
+			<div> 
+				<label>Select Category:</label>
+				<br>
+				<select id='category' required>
+				</select>
+			</div>
+			<div>  
+				<label>Select Difficulty:</label>
+				<br>
+				<select id='difficulty'>
+				</select>
+			</div>
+		</div>
+		
+		<div id="output">
+
+		</div>
+		<div class="timer"></div>
+		<div id="selAnswers">
+
+		</div>
+		
+		<button id="btn">Start</button>
+		<button id="btn1">Next Question</button>
+		
+	</div>
+	<button id="btn2">Restart</button>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="js/trivia.js"></script>
+</body>
+</html>

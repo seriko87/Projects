@@ -1,0 +1,148 @@
+html {
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+	font-size: 1.5em;
+}
+
+#selAnswers {
+	display: grid;
+	width: 800px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	margin: auto;
+	margin-bottom: 20px;
+	
+}
+
+button {
+	background:#2535c0ad;
+	padding:8px 13px;
+	border:none;
+
+	color:rgb(255, 255, 255) ;
+	margin:5px;
+	cursor:pointer;
+	font-size: 15px;
+	
+	
+}
+
+button:hover {
+	background:#4c5ce6ad;
+	padding:8px 13px;
+	border:none;
+
+	color:rgb(255, 255, 255) ;
+	margin:5px;
+	cursor:pointer;
+	font-size: 15px;
+}
+
+label {
+	font-weight: bold;
+}
+
+select, option {
+	cursor: pointer;
+}
+	
+.category {
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.question {
+	font-size: 1.5em;
+}
+
+.correct {
+	font-weight: bold;
+	color: Green;
+}
+
+.notCorrect {
+	font-weight: bold;
+	color: Red;	
+}
+
+.container {
+	background-color: rgba(139, 179, 253, 0.644);
+	display: flex;
+	flex-flow: column nowrap;
+	width: 1024px;
+	justify-content: center;
+	margin: auto;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+body {
+	background-image: url('../images/pat.png');
+	background-repeat: repeat;
+}
+h1 {
+	text-align: center;
+}
+
+div {
+	margin: 10px;
+	padding: 5px;
+}
+.top-section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+#btn {
+	width: 100px;
+	height: 80px;
+	border-radius: 20px;
+	margin: auto;
+	padding: 10px;
+	color: white;
+	font-size: 1.3em;
+	background-color:#4caf4fa1;
+	border: 0px;
+}
+
+#btn1 {
+	width: 150px;
+	height: 40px;
+	margin: auto;
+	padding: 10px;
+	color: white;
+	font-size: 16px;
+	background-color:#4caf4fa1;
+	border: 0px;
+	display: none;
+}
+
+#btn2 {
+	width: 150px;
+	height: 50px;
+	display: block;
+	margin: auto;
+	color: white;
+	font-size: 18px;
+	background-color:#ff0000a1;
+	border: 0px;
+}
+
+
+select {
+	border: none;
+	width: auto;
+	height: 35px;
+	background-color: rgb(21, 163, 219);
+	font-family: 'Open Sans';
+	font-size: 14px;
+}
+
+.timer {
+	background-color:#17970cad;
+	height: 10px;
+	
+	margin: auto;
+	display: none;
+}
