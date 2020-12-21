@@ -12,9 +12,11 @@ const scores = {'correct': 0, 'wrong': 0};
 
 const categories = {
      9: 'General Knowlegde',
+    11: 'Enternainment: Film',
+    31: 'Entertainment: Japanese Anime &amp; Manga',
+    15: 'Enternainment: Video Games',
     18: 'Science: Computers',
-    21: 'Sports',
-    31: 'Entertainment: Japanese Anime &amp; Manga'
+    21: 'Sports'
 };
 
 const difficulty = {
