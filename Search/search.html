@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Youtube Search Project</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Search<span>Videos</span></h1>
+            <p>Search Youtube Videos</p>
+    
+        </header>
+        
+        <section>
+            <form name='search-form' onsubmit="return search()" id="search-form">
+                <div class="fieldContainer">
+                    <input type="submit" id="search-btn" name="search-btn" value="">
+                    <input type="search" id="query" class="search-field" placeholder="Search Youtube">
+                </div>
+            </form>
+        </section>
+        <ul id="results">
+            <li></li>
+        </ul>
+        <div id="buttons"></div>
+        <footer>
+            <p>
+                Copyright &copy; 2020 All rights Reserved
+            </p>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
+    <script src="js/search.js">
+    
+    </script>
+</body>
+</html>

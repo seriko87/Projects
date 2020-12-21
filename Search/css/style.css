@@ -1,0 +1,146 @@
+body{
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6em;
+    color: #666;
+    background: #e1e1e1 url("../img/creampaper.png");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+#container {
+    width: 750px;
+    background-color: #fff;
+    margin: auto;
+    
+}
+
+header {
+    background-color: rgb(226, 225, 225);
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+}
+header p {
+    padding: 5px;
+}
+span {
+    color: #f00;
+}
+header h1 {
+    color: black;
+}
+
+section {
+    padding: 20px;
+}
+form {
+    display: block;
+}
+
+.fieldContainer {
+    display: flex;
+   
+    
+   
+}
+
+#search-btn {
+    height: 35px;
+    width: 35px;
+    background-image: url("../img/search.png");
+    background-size: cover;
+    
+    border: 0;
+    background-color: white;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    margin-top: 10px ;
+    margin-left: 5px;
+    opacity: 0.5;
+    
+}
+#search-btn:hover {
+    opacity: 0.8;
+}
+
+/*
+#query {
+    height: 30px;
+    width: 45%;
+    border: none;
+    box-sizing: border-box;
+    border: 1px solid rgb(65, 65, 65);
+}*/
+
+footer {
+    background-color: rgb(226, 225, 225);
+    padding: 20px;
+    text-align: center;
+}
+
+.search-field {
+    box-sizing: border-box;
+    display: block;
+    width: 45%;
+    padding: 11px 7px;
+    padding-right: 43px;
+    padding-left: 40px;
+    color: #ccc;
+    border: 1px solid #c8c8c8;
+    font-size: 1.6em;
+    border-bottom-color:#d2e2e7 ;
+    border-radius: 1px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #f0f0f0;
+    transition: width 0.4s ease-in-out;
+}
+.search-field:focus {
+    width: 100%;
+}
+
+.list-left {
+    float:left;
+    width: 20%;
+}
+
+.list-left img{
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+.list-right {
+    float: right;
+    width: 78%;
+}
+#results li {
+    
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    list-style: none;
+    overflow: auto;
+}
+
+span {
+    color: red;
+}
+
+.paging-button {
+    background-color: rgb(187, 187, 187);
+    padding: 8px 13px;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    margin: 5px;
+}
+.button-container {
+    margin: 20px;
+}
