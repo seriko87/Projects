@@ -1,8 +1,8 @@
-/*
+
 function updateApi (){
     $.ajax({
          url: `https://api.nasa.gov/planetary/apod?`,
-         data:{date:'2020-10-10',api_key: 'NaQ9geoTkHNXybutx7eD9h3zjilArlXgOd3fydf8'},
+         data:{api_key: 'NaQ9geoTkHNXybutx7eD9h3zjilArlXgOd3fydf8'},
          type: 'GET',
          datatype: 'json',
          success: function(data){
@@ -11,7 +11,7 @@ function updateApi (){
          }
      });
  };
-*/
+
 
 
 $('#start').on("click", ()=> {
@@ -22,14 +22,14 @@ $('#start').on("click", ()=> {
 
 function updateInterface(data){
     let url = data.url;
-    $('img').attr('src', url);
+    $('iframe').attr('src', url);
     $('#title').text(data.title);
     $('#expln').text(data.explanation);
 }
 
 const getData = async ( url = 'https://api.nasa.gov/planetary/apod?api_key=NaQ9geoTkHNXybutx7eD9h3zjilArlXgOd3fydf8', data = {})=>{
     let url = new URL(url)
-    URLSearchParams
+    
       const response = await fetch(url);
       
 
