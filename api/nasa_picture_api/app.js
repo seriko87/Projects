@@ -23,6 +23,7 @@ $('#start').on("click", ()=> {
 function updateInterface(data){
     let url = data.url;
     $('iframe').attr('src', url);
+    /*asdasdasd*/
     $('#title').text(data.title);
     $('#expln').text(data.explanation);
 }
