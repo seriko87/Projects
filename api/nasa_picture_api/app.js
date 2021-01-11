@@ -2,7 +2,7 @@
 function updateApi (){
     $.ajax({
          url: `https://api.nasa.gov/planetary/apod?`,
-         data:{api_key: 'NaQ9geoTkHNXybutx7eD9h3zjilArlXgOd3fydf8'},
+         data:{api_key: 'DEMO_KEY'},
          type: 'GET',
          datatype: 'json',
          success: function(data){
@@ -22,12 +22,20 @@ $('#start').on("click", ()=> {
 
 function updateInterface(data){
     let url = data.url;
-    $('iframe').attr('src', url);
+    if (data.media_type == 'image') {
+        $('img').attr('src', url);
+        $('iframe').hide()
+    } else {
+        $('iframe').attr('src', url);
+        $('img').hide()
+    }
+    
+    
    
     $('#title').text(data.title);
     $('#expln').text(data.explanation);
 }
-
+/*
 const getData = async ( url = 'https://api.nasa.gov/planetary/apod?api_key=NaQ9geoTkHNXybutx7eD9h3zjilArlXgOd3fydf8', data = {})=>{
     let url = new URL(url)
     
@@ -44,3 +52,4 @@ const getData = async ( url = 'https://api.nasa.gov/planetary/apod?api_key=NaQ9g
 }
 
 getData();
+*/

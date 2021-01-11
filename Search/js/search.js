@@ -22,7 +22,7 @@ function search(token){
 function apiRequest (query, token){
     $.ajax({
         url: 'https://www.googleapis.com/youtube/v3/search', 
-        data: {part:'snippet, id', q: query, type:'video', pageToken: token, key:'AIzaSyCmAcB4n-_d8i3OG917z02SyNh4hauAmRs'}, 
+        data: {part:'snippet, id', q: query, type:'video', pageToken: token, key:''}, 
         type: 'GET', 
         dataType: 'json',
         success: function(data){
