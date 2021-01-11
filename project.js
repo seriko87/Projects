@@ -7,7 +7,7 @@ buttons.forEach(button =>{
         } else if (button.innerText === 'Trivia'){
             location.href = './Trivia battle/index.html';
         } else if (button.innerText === 'To-do app'){
-            location.href = './calculator/calculator.html'
+            alert('Coming Soon!!!')
         } else if (button.innerText === 'Nasa Api'){
             location.href = './api/nasa_picture_api/index.html'
         }
